@@ -6,6 +6,8 @@ module.exports = {
         node: true,
         jest: true,
     },
+    plugins: ["@typescript-eslint/eslint-plugin"],
+    parser: "@typescript-eslint/parser",
     extends: 'eventbrite-react',
     parserOptions: {
         sourceType: 'module',
@@ -13,9 +15,9 @@ module.exports = {
     globals: {
         jest: true,
     },
-    "settings": {
-        "react": {
-            "version": "detect"
+    settings: {
+        react: {
+            version: "detect"
         }
     },
     rules: {
